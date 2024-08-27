@@ -10,7 +10,7 @@ jobs:
         with: 
           java-version: '11'
           distribution: 'terumin'
-          cache: mavem
+          cache: maven
       - name: Build with maven cloud
         run: mvn -B Verify sonar:sonar -Dsonar.projectKey=javaprojectreachabilityparreira -Dsonar.organization=javaprojectreachabilityparreira -Dsonar.host.url=https://sonarcloud.io - Dsonar.login=$SONAR_TOKEN
         env:
